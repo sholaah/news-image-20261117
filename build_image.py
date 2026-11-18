@@ -1,7 +1,8 @@
 """Build entry.png for make.fun news-image-20261117.
 
 The base illustration (assets/) was generated in-session as an editorial
-world-map scene of 17 November 2026's top stories:
+world-map scene of 17 November 2026's top stories, then extended with a
+hacker vignette and a Bitcoin vignette:
   - Ukraine's "unprecedented operation" severely damages the Crimean
     Bridge; Zelenskyy hails it, the bridge closes, Kyiv's bridges are hit
     in reply (the burning bridge at the centre)
@@ -12,17 +13,21 @@ world-map scene of 17 November 2026's top stories:
     Japan scrambles jets after Russian aircraft violate its airspace
     (summit tower, flags and jets at upper right)
   - Wall Street's sell-off: the Dow tumbles 849 points as tech slides
-    ahead of Nvidia earnings (red arrow and falling coins at upper left)
-  - Five European governments unveil a joint Rwanda return hub for
-    rejected asylum seekers (the jet over the savanna at the bottom)
-This script frames it as a front page: masthead on top, headline strips
-below, and exports a PNG of at most 1024x1024 and 1 MiB.
+    ahead of Nvidia earnings (falling coins at upper left)
+  - Hacking: a hooded figure at glowing code screens (upper left) — the
+    day Kava Lend lost about $3.8M to an exploit of its dormant BUSD
+    market, 55.2M KAVA borrowed and the token down by half
+  - Crypto: a giant Bitcoin coin under a plunging chart (bottom) —
+    bitcoin stalled below $65,000, under its 200-week average, with
+    about $230B wiped from total crypto value in three days
+This script frames it as a front page: masthead on top, six headline
+strips below, and exports a PNG of at most 1024x1024 and 1 MiB.
 """
 from PIL import Image, ImageDraw, ImageFont
 import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.join(HERE, "assets", "media-generation-world-17nov-0-ae187168-52f6-4571-a63f-4520914efa8b.png")
+SRC = os.path.join(HERE, "assets", "media-generation-world-17nov-v2-0-b5a2076a-bf5a-4369-a742-2038b1c17d6f.png")
 OUT = os.path.join(HERE, "entry.png")
 FONT_DIR = "/usr/share/fonts/truetype/dejavu"
 NAVY = (9, 24, 43)
@@ -30,7 +35,7 @@ GOLD = (242, 193, 78)
 WHITE = (245, 247, 250)
 
 W, H = 1024, 1024
-TOP_H, BOT_H = 98, 146
+TOP_H, BOT_H = 98, 214
 
 
 def font(name, size):
@@ -57,6 +62,8 @@ def main():
         ((230, 126, 34), "IRANIAN DRONES TARGET U.S. RADAR IN BAHRAIN"),
         ((242, 193, 78), "TRUMP IN ASIA: XI & PUTIN TRILATERAL AHEAD AT APEC"),
         ((93, 173, 226), "DOW TUMBLES 849 POINTS AS TECH SELLS OFF"),
+        ((46, 204, 113), "HACK: KAVA LEND EXPLOIT DRAINS $3.8M VIA DORMANT MARKET"),
+        ((175, 122, 197), "CRYPTO: BITCOIN STALLS UNDER $65K · $230B WIPED IN 3 DAYS"),
     ]
     fnt = font("DejaVuSans-Bold.ttf", 24)
     y = H - BOT_H + 10

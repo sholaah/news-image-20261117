@@ -27,8 +27,14 @@ One editorial world map whose flashpoints are the day's top stories:
   summit tower, flags and jets at upper right.
 - **Wall Street's sell-off** — the Dow tumbles 849 points as tech slides
   ahead of Nvidia earnings; the red arrow and falling coins at upper left.
-- **Five European governments unveil a joint Rwanda return hub** for
-  rejected asylum seekers — the jet over the savanna at the bottom.
+- **The Kava Lend exploit** — an attacker abused a lending market left
+  dormant since BUSD minting stopped, borrowed 55.2M KAVA (about $3.8M)
+  and halved the token's price; the hooded figure at the code screens,
+  upper left.
+- **Crypto's brutal week** — bitcoin stalled below $65,000, under its
+  200-week average, after roughly $230B was wiped from total crypto
+  value in three days and up to $2B of leveraged positions liquidated;
+  the giant coin under its plunging chart at the bottom.
 
 The base illustration was generated in-session and framed with a masthead
 and headline strips by `build_image.py` (Pillow). The day's stories were
