@@ -46,7 +46,9 @@ compiled from wire and front-page reports of 17 Nov 2026.
 
 The illustration is a flat red/black/navy icon collage in the style of
 *The Economist*'s "The World Ahead" covers — a circular globe of small
-iconic scenes, one per story.
+iconic scenes, one per story. The layout mirrors those covers too:
+a small red masthead box and a large date title over the full-bleed
+collage, with no headline strips.
 
 ## License
 
