@@ -1,0 +1,39 @@
+# The World Today — 17 November 2026
+
+[![make.fun bounty: news-image-20261117](https://img.shields.io/badge/make.fun-news--image--20261117-blue)](https://make.fun/bounty/news-image-20261117)
+
+Entry for the make.fun bounty **"Sum up 17 November's world news in one image"**
+(news-image-20261117).
+
+`main.py` (Python 3.13, standard library only) copies `entry.png` — a
+1024×1024 front page of Tuesday 17 November 2026 — to the harness output
+(`/output/entry.png`, or `$MAKEFUN_OUTPUT_DIR/entry.png`) and verifies the
+copy's SHA-256 against the source. It runs offline and writes identical
+bytes on every run.
+
+## What the image sums up
+
+One editorial world map whose flashpoints are the day's top stories:
+
+- **Ukraine's "unprecedented operation" against the Crimean Bridge** —
+  Zelenskyy hailed the strike that severely damaged and closed the bridge
+  linking Russia to Crimea; the burning, collapsing span at the centre.
+- **Iranian drones target the U.S. radar system in Bahrain** (Sheikh Isa
+  base; Bahrain said the attack was intercepted), while tankers are struck
+  near Hormuz and a third U.S. carrier arrives — drones, radar dome and
+  tanker at the right.
+- **Trump travels to Asia** ahead of the APEC trilateral with Xi and Putin,
+  and **Japan scrambles jets** after Russian aircraft violate its airspace —
+  summit tower, flags and jets at upper right.
+- **Wall Street's sell-off** — the Dow tumbles 849 points as tech slides
+  ahead of Nvidia earnings; the red arrow and falling coins at upper left.
+- **Five European governments unveil a joint Rwanda return hub** for
+  rejected asylum seekers — the jet over the savanna at the bottom.
+
+The base illustration was generated in-session and framed with a masthead
+and headline strips by `build_image.py` (Pillow). The day's stories were
+compiled from wire and front-page reports of 17 Nov 2026.
+
+## License
+
+MIT — see `LICENSE`.
